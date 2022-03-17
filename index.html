@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>TP1</title>
+  </head>
+  <body>
+    <div class="container">
+      <fieldset>
+        <legend>Ajouter une nouvelle Question</legend>
+        <form id="qrform" method="post">
+          <input
+            type="text"
+            name="question"
+            placeholder="Entrez la question"
+            maxlength="100"
+            required
+          />
+          <input
+            type="text"
+            name="reponse"
+            placeholder="Entrez la réponse"
+            maxlength="100"
+            required
+          />
+          <button id="btn" type="submit">Enregistrer</button>
+        </form>
+      </fieldset>
+
+      <!-- place for the QR -->
+    </div>
+
+    <script src="js/questionnaire.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
