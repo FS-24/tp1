@@ -1,3 +1,4 @@
+import { Questionnaire } from "./questionnaire";
 var questions = document.querySelectorAll(".question");
 var formulaire = document.getElementById("qrform");
 
@@ -7,8 +8,11 @@ function creatNewQR() {
     formulaire.elements["reponse"].value
   );
   newQuestion.creatQuestionnaireElement();
-
+  
   Questionnaire.storeInLocalstorage(newQuestion);
+
+  formulaire.elements["question"].value="";
+  formulaire.elements["reponse"].value="";
 }
 /**
  * get elements from local storage ans create new element in the container
