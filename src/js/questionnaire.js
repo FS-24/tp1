@@ -1,4 +1,4 @@
-class Questionnaire {
+export class Questionnaire {
   constructor(question, reponse) {
     this.question = question;
     this.reponse = reponse;
